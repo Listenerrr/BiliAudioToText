@@ -2,13 +2,18 @@
 .venv/
 venv/
 
+#忽略历史记录存档
+*.csv
+
 # 忽略 Python 自动生成的缓存文件
 __pycache__/
 *.py[cod]
 
-# 忽略下载的音频文件和临时文件
+# 忽略下载的音频文件、字幕文件、文本文件和临时文件
 *.mp3
 *.m4a
+*.srt
+*.txt
 downloads/
 temp_audio.*
 

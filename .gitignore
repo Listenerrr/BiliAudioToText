@@ -1,0 +1,17 @@
+# 忽略虚拟环境文件夹
+.venv/
+venv/
+
+# 忽略 Python 自动生成的缓存文件
+__pycache__/
+*.py[cod]
+
+# 忽略下载的音频文件和临时文件
+*.mp3
+*.m4a
+downloads/
+temp_audio.*
+
+# 忽略开发工具的配置文件
+.idea/
+.vscode/

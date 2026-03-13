@@ -52,7 +52,12 @@ def process_video(raw_input):
 
     print("🧠 正在进行 AI 语音识别...")
     try:
-        segments, info = model.transcribe(temp_audio, beam_size=5)
+        # 💡 增加 initial_prompt，用一段简体中文文本作为“引子”，强制模型输出简体字
+        segments, info = model.transcribe(
+            temp_audio,
+            beam_size=5,
+            initial_prompt="以下是一段简体中文的普通话句子。"
+        )
 
         # 💡 优化点 1：准备两个不同的字符串变量来分别存储结果
         text_with_timestamps = f"识别语言: {info.language}\n" + "=" * 30 + "\n"

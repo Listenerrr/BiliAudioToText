@@ -14,6 +14,7 @@ __pycache__/
 *.m4a
 *.srt
 *.txt
+!requirements.txt
 downloads/
 temp_audio.*
 
